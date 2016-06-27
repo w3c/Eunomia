@@ -1,0 +1,11 @@
+{
+    "esversion": 6,
+    "globals": {
+        "require": false,
+        "exports": false
+    },
+    "laxcomma": true,
+    "loopfunc": true,
+    "undef": true,
+    "unused": true
+}

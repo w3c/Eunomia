@@ -1,0 +1,62 @@
+{
+  "name": "eunomia",
+  "version": "0.0.1",
+  "description": "A tool to manage recurrent WebEx meetings at the W3C",
+  "license": "MIT",
+  "homepage": "https://github.com/w3c/Eunomia",
+  "keywords": [
+    "Eunomia",
+    "WebEx",
+    "W3C",
+    "w3.org",
+    "World Wide Web Consortium",
+    "meeting",
+    "calendar",
+    "conference",
+    "teleconference",
+    "timezone"
+  ],
+  "author": "World Wide Web Consortium (W3C)",
+  "contributors": [
+    {
+      "name": "Antonio Olmo Titos",
+      "email": "antonio@w3.org",
+      "url": "https://www.w3.org/People/Antonio/"
+    }
+  ],
+  "main": "server",
+  "preferGlobal": false,
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w3c/Eunomia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/w3c/Eunomia/issues"
+  },
+  "engines": {
+    "node": "6",
+    "npm": "3"
+  },
+  "scripts": {
+    "test": "nsp check && jshint server.js lib/ static/ test/ views/ && jscs server.js lib/ static/ test/ views/ && mocha",
+    "jsdoc": "jsdoc -a all --verbose -d doc/ -e utf8 -r server.js lib/ static/ test/ views/",
+    "start": "node --use_strict --throw-deprecation --trace-deprecation server"
+  },
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "express-handlebars": "3.0.0",
+    "express": "4.14.0",
+    "moment": "2.13.0",
+    "sqlite3": "3.1.4",
+    "winston": "2.2.0"
+  },
+  "devDependencies": {
+    "jscs": "3.0.5",
+    "jsdoc": "3.4.0",
+    "jshint": "2.9.2",
+    "mocha": "2.5.3",
+    "nsp": "2.5.0",
+    "updtr": "0.2.0"
+  }
+}

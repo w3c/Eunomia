@@ -1,0 +1,5 @@
+[
+    {"path": "/", "view": "index", "title": null},
+    {"path": "/people", "view": "people", "title": "people"},
+    {"path": "/meetings", "view": "meetings", "title": "meetings"}
+]

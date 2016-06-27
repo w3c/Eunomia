@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/w3c/Eunomia.svg?branch=master)](https://travis-ci.org/w3c/Eunomia)
+
 # Eunomia
 
 A tool to manage recurrent WebEx meetings

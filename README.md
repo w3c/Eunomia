@@ -21,29 +21,64 @@ them according to their own timezone.
 ## 2. Screenshots
 
 Front page (not logged in):
-<img src="https://w3c.github.io/Eunomia/screenshots/front-page-not-logged-in.png" alt="Front page (not logged in)" width="128" />
 
-![Sign up](https://w3c.github.io/Eunomia/screenshots/sign-up.png)
+<img src="https://w3c.github.io/Eunomia/screenshots/front-page-not-logged-in.png"
+alt="Front page (not logged in)" width="256" />
 
-![Log in](https://w3c.github.io/Eunomia/screenshots/log-in.png)
+Sign up:
 
-![Front page (logged in)](https://w3c.github.io/Eunomia/screenshots/front-page-logged-in.png)
+<img src="https://w3c.github.io/Eunomia/screenshots/sign-up.png"
+alt="Sign up" width="256" />
 
-![All people](https://w3c.github.io/Eunomia/screenshots/people.png)
+Log in:
 
-![One person](https://w3c.github.io/Eunomia/screenshots/person.png)
+<img src="https://w3c.github.io/Eunomia/screenshots/log-in.png"
+alt="Log in" width="256" />
 
-![All meetings](https://w3c.github.io/Eunomia/screenshots/meetings.png)
+Front page (logged in):
 
-![One meeting](https://w3c.github.io/Eunomia/screenshots/meeting.png)
+<img src="https://w3c.github.io/Eunomia/screenshots/front-page-logged-in.png"
+alt="Front page (logged in)" width="256" />
 
-![All locations](https://w3c.github.io/Eunomia/screenshots/locations.png)
+All people:
 
-![One location](https://w3c.github.io/Eunomia/screenshots/location.png)
+<img src="https://w3c.github.io/Eunomia/screenshots/people.png"
+alt="All people" width="256" />
 
-![All timezones](https://w3c.github.io/Eunomia/screenshots/timezones.png)
+One person:
 
-![One timezone](https://w3c.github.io/Eunomia/screenshots/timezone.png)
+<img src="https://w3c.github.io/Eunomia/screenshots/person.png"
+alt="One person" width="256" />
+
+All meetings:
+
+<img src="https://w3c.github.io/Eunomia/screenshots/meetings.png"
+alt="All meetings" width="256" />
+
+One meeting:
+
+<img src="https://w3c.github.io/Eunomia/screenshots/meeting.png"
+alt="One meeting" width="256" />
+
+All locations:
+
+<img src="https://w3c.github.io/Eunomia/screenshots/locations.png"
+alt="All locations" width="256" />
+
+One location:
+
+<img src="https://w3c.github.io/Eunomia/screenshots/location.png"
+alt="One location" width="256" />
+
+All timezones:
+
+<img src="https://w3c.github.io/Eunomia/screenshots/timezones.png"
+alt="All timezones" width="256" />
+
+One timezone:
+
+<img src="https://w3c.github.io/Eunomia/screenshots/timezone.png"
+alt="One timezone" width="256" />
 
 ## 2. Getting started
 

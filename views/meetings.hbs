@@ -1,1 +1,26 @@
-All meetings will appear here.
+<div class="row">
+    <table class="col-xs-12 table table-condensed tablesorter">
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>Assigned to </th>
+                <th>Tied to </th>
+                <th>{{#if known}}<span class="your">Your</span>{{else}}<span class="local">Local</span>{{/if}} day </th>
+                <th>{{#if known}}<span class="your">Your</span>{{else}}<span class="local">Local</span>{{/if}} time </th>
+                <th>Duration </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <th><a href="/{{name}}">{{name}}</a></th>
+                <td><a href="/{{owner}}">{{owner}}</a></td>
+                <td><a href="/{{location}}">{{location}}</a><a href="/{{timezone}}">{{timezone}}</a></td>
+                <td>{{niceDay}}</td>
+                <td>{{time}}</td>
+                <td>{{{niceDuration}}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

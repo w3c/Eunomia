@@ -1,0 +1,15 @@
+<div class="row">
+    {{#if known}}
+    <p class="col-xs-12">You are already logged in as <a href="{{user.name}}">{{user.name}}</a>.</p>
+    <p class="col-xs-12">Not {{user.name}}? <a href="/logout">Log out</a>.</p>
+    {{else}}
+    <ul class="col-xs-12 list-unstyled">
+        {{#each list}}
+        <li>
+        <a href="#" data-id="{{name}}">{{name}}</a>
+        </li>
+        {{/each}}
+    </ul>
+    <p class="col-xs-12">Not on this list? <a href="/signup">Sign up</a>.</p>
+    {{/if}}
+</div>

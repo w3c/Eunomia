@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: server.js</title>
+    <title>JSDoc: Source: lib/logging.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: server.js</h1>
+    <h1 class="page-title">Source: lib/logging.js</h1>
 
     
 
@@ -27,42 +27,60 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @file Eunomia's main file and entry point
+ * @file Handle application logs
  * @author Antonio Olmo Titos &lt;antonio@w3.org>
- * @exports server
+ * @exports lib/logging
  */
 
 // Configuration:
-const SELF = require('./package'),
-    CONFIG = require('./config');
+const CONFIG = require('../config');
 
 // External packages:
-const EXPRESS = require('express');
+const WINSTON = require('winston');
 
-// Internal packages:
-const LOGGING = require('./lib/logging'),
-    AUTHENTICATION = require('./lib/authentication'),
-    PERSISTENCE = require('./lib/persistence'),
-    TIMEZONES = require('./lib/timezones'),
-    ROUTING = require('./lib/routing');
+// Variables:
+var logger;
 
-// Constants:
-const APP = new EXPRESS();
+/**
+ * Set up logging
+ */
 
-// Set up static assets:
-APP.use(EXPRESS.static('static', {redirect: true}));
+const setUp = function() {
+    if (logger)
+        logger.warn(`“logging.setUp()” called more than once`);
+    else {
+        const level = CONFIG.debug ? 'silly' : 'info';
+        // @TODO: handle issues.
+        logger = new WINSTON.Logger({
+            transports: [
+                new WINSTON.transports.Console({level: level, json: false}),
+                new WINSTON.transports.File({level: level, json: false, filename: CONFIG.log})
+            ]
+        });
+        logger.info(`logging to file “${CONFIG.log}” with level “${level}”`);
+        // Export more stuff:
+        exports.error = logger.error;
+        exports.warn = logger.warn;
+        exports.info = logger.info;
+        exports.debug = logger.debug;
+        exports.dir = dir;
+    }
+};
 
-// Set up aspects:
-LOGGING.setUp();
-AUTHENTICATION.setUp(APP);
-PERSISTENCE.setUp();
-TIMEZONES.setUp();
-ROUTING.setUp(APP);
+/**
+ * Log the trace of an object
+ * @param {Object} obj - the object to print
+ * @param {String} msg - (optional) a message to prefix the trace
+ */
 
-// Listen for connections:
-APP.listen(CONFIG.port);
+const dir = function(obj, msg) {
+    const prefix = msg ? `${msg}: ` : '';
+    const trace = JSON.stringify(obj);
+    logger.debug(`${prefix}${trace}`);
+};
 
-LOGGING.info(`${SELF.name} ${SELF.version} set up${CONFIG.debug ? ' in debug mode' : ''} and listening on port ${CONFIG.port}`);
+// Export stuff:
+exports.setUp = setUp;
 </code></pre>
         </article>
     </section>

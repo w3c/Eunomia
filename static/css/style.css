@@ -1,27 +1,179 @@
-/* Eunomia's stylesheet. */
+/* Eunomia's stylesheet */
+
+/************************************** Reset styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    font-size: 2rem;
+    /*font-weight: normal;*/
+    line-height: 1.25em;
+    text-align: left;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #606060;
+}
+
+/************************************** Main components */
 
 header,
 footer {
     position: fixed;
     left: 0;
     right: 0;
-    background-color: #fff0f0;
+    background-color: #404040;
     border-style: solid;
-    border-color: #c0c0c0;
+    border-color: #ffffff;
 }
 
 header {
     top: 0;
-    /*height: 4rem;*/
-    border-width: 0 0 1px 0;
+    z-index: 100;
+    border-width: 0 0 .5em 0;
+}
+
+header p {
+    margin: 0;
+}
+
+header p a {
+    font-size: 2em;
+    line-height: 1.2em;
+    height: 1em;
+    font-style: italic;
+    color: #c0c0c0;
+}
+
+header p a::before {
+    content: '\25b8';
+}
+
+header p a:hover,
+header p a:active,
+header p a:focus {
+    text-decoration: none;
+    color: #ffff00;
 }
 
 footer {
     bottom: 0;
-    /*height: 2rem;*/
-    border-width: 1px 0 0 0;
+    z-index: 100;
+    border-width: .5em 0 0 0;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+    color: #ffff00;
+}
+
+footer p {
+    margin: 0;
+    line-height: 2em;
+}
+
+footer p,
+footer p * {
+    font-size: .9em;
 }
 
 main {
-    margin: 16rem;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+/************************************** Headings */
+
+h1,
+h2 {
+    margin: 0 -.2rem 0 -.6rem;
+    padding: 0 !important;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: .6em;
+    font-weight: 900;
+}
+
+a:hover h1,
+a:active h1,
+a:focus h1 {
+    color: #ffff00;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.85em;
+    height: 1em;
+    font-weight: 700;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+/************************************** Tables */
+
+thead th {
+    cursor: pointer;
+}
+
+thead th:hover {
+    background-color: #f0f0f0;
+}
+
+
+.tablesorter-headerUnSorted .tablesorter-header-inner::after {
+    content: ' ';
+}
+
+.tablesorter-headerDesc .tablesorter-header-inner::after {
+    content: '\25b2';
+    color: palegreen;
+}
+
+.tablesorter-headerAsc .tablesorter-header-inner::after {
+    content: '\25bc';
+    color: bisque;
+}
+
+/************************************** Ad-hoc classes */
+
+.righted {
+    text-align: right;
+}
+
+.block {
+    white-space: nowrap;
+}
+
+.phantom {
+    visibility: hidden;
+}
+
+.missing {
+    display: none;
+}
+
+.your {
+    color: coral;
+    font-weight: 700;
+}
+
+.local {
+    color: yellowgreen;
+    font-weight: 700;
 }

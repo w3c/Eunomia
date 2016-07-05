@@ -1,5 +1,12 @@
-[
-    {"path": "/", "view": "index", "title": null},
-    {"path": "/people", "view": "people", "title": "people"},
-    {"path": "/meetings", "view": "meetings", "title": "meetings"}
-]
+{
+    "/": {"view": "index", "title": null, "special": true},
+    "/login": {"view": "login", "title": "log in", "list": "people", "post": "login", "special": true},
+    "/signup": {"view": "signup", "title": "sign up", "post": "signup", "special": true},
+    "/people": {"view": "people", "title": "people", "list": "people"},
+    "/meetings": {"view": "meetings", "title": "meetings", "list": "meetings", "process": "meetings"},
+    "/locations": {"view": "locations", "title": "locations", "list": "locations"},
+    "/timezones": {"view": "timezones", "title": "timezones", "timezones": true},
+    "/today": {"view": "today", "title": "today"},
+    "/week": {"view": "week", "title": "this week"},
+    "/month": {"view": "month", "title": "this month"}
+}

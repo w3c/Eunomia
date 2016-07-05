@@ -1,6 +1,20 @@
-<p>Welcome!</p>
-
-<ul>
-    <li><a href="/meetings">Meetings</a></li>
-    <li><a href="/people">People</a></li>
-</ul>
+<div class="row">
+    <ul class="col-xs-12 list-unstyled">
+        {{#if known}}
+        <!-- <li><a href="/me">Me</a></li> -->
+        <!-- <li><a href="/today">Today</a></li>
+        <li><a href="/week">This week</a></li>
+        <li><a href="/month">This month</a></li> -->
+        {{else}}
+        <li><strong><a href="/login">Log in</a></strong></li>
+        <li><strong><a href="/signup">Sign up</a></strong></li>
+        {{/if}}
+        <li><a href="/people">People</a></li>
+        <li><a href="/meetings">Meetings</a></li>
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/timezones">Timezones</a></li>
+        {{#if known}}
+        <li><strong><a href="/logout">Log out</a></strong></li>
+        {{/if}}
+    </ul>
+</div>

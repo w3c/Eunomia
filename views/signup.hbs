@@ -1,0 +1,57 @@
+<div class="row">
+    {{#if known}}
+    <p class="col-xs-12">You are already logged in as <a href="{{user.name}}">{{user.name}}</a>.</p>
+    <p class="col-xs-12">Not {{user.name}}? <a href="/logout">Log out</a>.</p>
+    {{else}}
+    <form method="POST" action="#" class="col-xs-12">
+        <div class="form-group col-xs-12 col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Mary Jane" pattern="^[\w\-\.,][\w\ \-\.,]*[\w\-\.,]$" />
+        </div>
+        <div class="form-group col-xs-12 col-md-6">
+            <label for="email">E-mail address</label>
+            <input type="email" class="form-control" id="email" placeholder="m.jane@w3.org" />
+        </div>
+        <div class="form-group col-xs-12 col-md-6">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" id="location" placeholder="ERCIM" />
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="checkbox">
+                <label>
+                    <input id="travelling" type="checkbox" />
+                    Temporary location (eg, travelling)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="travellingLocation" placeholder="Antarctica/South_Pole" />
+            </div>
+        </div>
+        <div class="checkbox col-xs-12 col-md-6">
+            <label>
+                <input type="checkbox" />
+                Send weekly reminder
+            </label>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="checkbox">
+                <label>
+                    <input id="individual" type="checkbox" />
+                    Send reminder before each meeting
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="individualValue" placeholder="" />
+            </div>
+        </div>
+        <div class="checkbox col-xs-12 col-md-6">
+            <label>
+                <input type="checkbox" />
+                Monday is the first day of the week for you
+            </label>
+        </div>
+        <input type="submit" label="Create my user" />
+    </form>
+    <p class="col-xs-12">Already signed up? <a href="/login">Log in</a>.</p>
+    {{/if}}
+</div>

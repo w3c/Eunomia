@@ -1,6 +1,6 @@
 {
   "name": "eunomia",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tool to manage recurrent WebEx meetings at the W3C",
   "license": "MIT",
   "homepage": "https://github.com/w3c/Eunomia",
@@ -47,8 +47,9 @@
     "body-parser": "1.15.2",
     "express-handlebars": "3.0.0",
     "express": "4.14.0",
-    "moment": "2.13.0",
+    "moment-timezone": "0.5.4",
     "sqlite3": "3.1.4",
+    "cookie-session": "1.2.0",
     "winston": "2.2.0"
   },
   "devDependencies": {
@@ -57,6 +58,6 @@
     "jshint": "2.9.2",
     "mocha": "2.5.3",
     "nsp": "2.5.0",
-    "updtr": "0.2.0"
+    "updtr": "0.2.1"
   }
 }

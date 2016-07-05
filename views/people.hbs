@@ -1,1 +1,22 @@
-Staff goes here.
+<div class="row">
+    <table class="col-xs-12 table table-condensed tablesorter">
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>E-mail address </th>
+                <th>Based in </th>
+                <th>Temporarily in </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <th><a href="/{{name}}">{{name}}</a></th>
+                <td><a href="mailto:{{email}}?subject=Eunomia"><code>{{email}}</code></a></td>
+                <td>{{#if travelling}}<del>{{/if}}<a href="/{{location}}">{{location}}</a>{{#if travelling}}</del>{{/if}}</td>
+                <td>{{#if travelling}}<a href="/{{travelling}}">{{travelling}}</a>{{else}}&ndash;{{/if}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,22 @@
+<div class="row">
+    <table class="col-xs-12 table table-condensed tablesorter">
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>Timezone </th>
+                <th colspan="3">Location </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <th><a href="/{{name}}">{{name}}</a></th>
+                <td><a href="/{{timezone}}">{{timezone}}</a></td>
+                <td>{{city}}</td>
+                <td>{{state}}</td>
+                <td>{{country}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

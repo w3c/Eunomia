@@ -1,0 +1,13 @@
+<div class="row">
+    <ul class="col-xs-12 list-unstyled">
+        {{#each list}}
+        <li class="text-justify">
+            <strong>{{@key}}:</strong>
+            <br />
+            {{#each this}}
+            <span class="phantom">&mdash;</span>&nbsp;<span class="block"><a href="/{{this}}">{{{@key}}}</a></span>
+            {{/each}}
+        </li>
+        {{/each}}
+    </ul>
+</div>

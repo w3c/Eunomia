@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: lib/routing.js</title>
+    <title>JSDoc: Module: lib/util.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: lib/routing.js</h1>
+    <h1 class="page-title">Module: lib/util.js</h1>
 
     
 
@@ -34,7 +34,7 @@
     <div class="container-overview">
     
         
-            <div class="description">Set up Express, Handlebars and routes/views</div>
+            <div class="description">Miscellaneous utilities; mainly routines for strings</div>
         
 
         
@@ -76,7 +76,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line1">line 1</a>
+        <a href="lib_util.js.html">lib/util.js</a>, <a href="lib_util.js.html#line1">line 1</a>
     </li></ul></dd>
     
 
@@ -112,14 +112,14 @@
 
     
 
-    <h4 class="name" id="~buildContext"><span class="type-signature">(inner) </span>buildContext<span class="signature">(req, props)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    <h4 class="name" id="~formatDuration"><span class="type-signature">(inner) </span>formatDuration<span class="signature">(duration)</span><span class="type-signature"> &rarr; {String}</span></h4>
 
     
 
 
 
 <div class="description">
-    Context baseline for Handlebars rendering
+    Format a duration in minutes as a more readable string
 </div>
 
 
@@ -155,13 +155,13 @@
 
         <tr>
             
-                <td class="name"><code>req</code></td>
+                <td class="name"><code>duration</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">Number</span>
 
 
             
@@ -171,30 +171,7 @@
 
             
 
-            <td class="description last">(optional) Express request</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>props</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">(optional) data (keys/properties) to add to the context</td>
+            <td class="description last">duration, in min (eg, 150)</td>
         </tr>
 
     
@@ -235,7 +212,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line40">line 40</a>
+        <a href="lib_util.js.html">lib/util.js</a>, <a href="lib_util.js.html#line48">line 48</a>
     </li></ul></dd>
     
 
@@ -262,7 +239,7 @@
 
         
 <div class="param-desc">
-    a context to use in rendering
+    the equivalent "nice" duration (eg, "1h30'")
 </div>
 
 
@@ -273,7 +250,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Object</span>
+<span class="param-type">String</span>
 
 
     </dd>
@@ -288,14 +265,14 @@
 
     
 
-    <h4 class="name" id="~four_oh_four"><span class="type-signature">(inner) </span>four_oh_four<span class="signature">(req, res, message)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~isValidID"><span class="type-signature">(inner) </span>isValidID<span class="signature">(string)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
 
 
 
 <div class="description">
-    Generic handler for errors
+    Check if a string is a valid ID for an entity
 </div>
 
 
@@ -331,53 +308,7 @@
 
         <tr>
             
-                <td class="name"><code>req</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express request</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>res</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express response</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>message</code></td>
+                <td class="name"><code>string</code></td>
             
 
             <td class="type">
@@ -393,7 +324,7 @@
 
             
 
-            <td class="description last">(optional) additional error message to display</td>
+            <td class="description last">the candidate string</td>
         </tr>
 
     
@@ -434,7 +365,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line28">line 28</a>
+        <a href="lib_util.js.html">lib/util.js</a>, <a href="lib_util.js.html#line20">line 20</a>
     </li></ul></dd>
     
 
@@ -457,6 +388,28 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    whether the string is valid
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -465,14 +418,14 @@
 
     
 
-    <h4 class="name" id="~setUp"><span class="type-signature">(inner) </span>setUp<span class="signature">(app)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~normaliseID"><span class="type-signature">(inner) </span>normaliseID<span class="signature">(string)</span><span class="type-signature"> &rarr; {String}</span></h4>
 
     
 
 
 
 <div class="description">
-    Set up views using templates and Express Handlebars
+    “Normalise” a string to use it as the ID of an entity
 </div>
 
 
@@ -508,13 +461,13 @@
 
         <tr>
             
-                <td class="name"><code>app</code></td>
+                <td class="name"><code>string</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">String</span>
 
 
             
@@ -524,7 +477,7 @@
 
             
 
-            <td class="description last">the <a href="http://expressjs.com/">Express</a> application</td>
+            <td class="description last">the candidate string</td>
         </tr>
 
     
@@ -565,7 +518,183 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line60">line 60</a>
+        <a href="lib_util.js.html">lib/util.js</a>, <a href="lib_util.js.html#line33">line 33</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    the normalised string
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~processData"><span class="type-signature">(inner) </span>processData<span class="signature">(data, the)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Pre-process an entity item, or a list of entity items, to extend information
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">meeting info</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>the</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">same object, perhaps extended with more info</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_util.js.html">lib/util.js</a>, <a href="lib_util.js.html#line70">line 70</a>
     </li></ul></dd>
     
 

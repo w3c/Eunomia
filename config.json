@@ -1,0 +1,6 @@
+{
+    "debug": true,
+    "log": "eunomia.log",
+    "db": "eunomia.db",
+    "port": 3000
+}

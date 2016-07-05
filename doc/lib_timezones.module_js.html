@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: lib/routing.js</title>
+    <title>JSDoc: Module: lib/timezones.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: lib/routing.js</h1>
+    <h1 class="page-title">Module: lib/timezones.js</h1>
 
     
 
@@ -34,7 +34,7 @@
     <div class="container-overview">
     
         
-            <div class="description">Set up Express, Handlebars and routes/views</div>
+            <div class="description">Handle timezones</div>
         
 
         
@@ -76,7 +76,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line1">line 1</a>
+        <a href="lib_timezones.js.html">lib/timezones.js</a>, <a href="lib_timezones.js.html#line1">line 1</a>
     </li></ul></dd>
     
 
@@ -112,14 +112,174 @@
 
     
 
-    <h4 class="name" id="~buildContext"><span class="type-signature">(inner) </span>buildContext<span class="signature">(req, props)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    <h4 class="name" id="~processTimezone"><span class="type-signature">(inner) </span>processTimezone<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_timezones.js.html">lib/timezones.js</a>, <a href="lib_timezones.js.html#line71">line 71</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~setUp"><span class="type-signature">(inner) </span>setUp<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    Context baseline for Handlebars rendering
+    Set up timezones
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_timezones.js.html">lib/timezones.js</a>, <a href="lib_timezones.js.html#line27">line 27</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~shiftTime"><span class="type-signature">(inner) </span>shiftTime<span class="signature">(to, time)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Return the equivalent date-time in a different timezone
 </div>
 
 
@@ -155,13 +315,13 @@
 
         <tr>
             
-                <td class="name"><code>req</code></td>
+                <td class="name"><code>to</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">String</span>
 
 
             
@@ -171,14 +331,14 @@
 
             
 
-            <td class="description last">(optional) Express request</td>
+            <td class="description last">the target timezone</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>props</code></td>
+                <td class="name"><code>time</code></td>
             
 
             <td class="type">
@@ -194,7 +354,7 @@
 
             
 
-            <td class="description last">(optional) data (keys/properties) to add to the context</td>
+            <td class="description last">(optional) the date-time (<code>now()</code> if not present)</td>
         </tr>
 
     
@@ -235,7 +395,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line40">line 40</a>
+        <a href="lib_timezones.js.html">lib/timezones.js</a>, <a href="lib_timezones.js.html#line90">line 90</a>
     </li></ul></dd>
     
 
@@ -262,7 +422,7 @@
 
         
 <div class="param-desc">
-    a context to use in rendering
+    the equivalent date-time
 </div>
 
 
@@ -288,14 +448,14 @@
 
     
 
-    <h4 class="name" id="~four_oh_four"><span class="type-signature">(inner) </span>four_oh_four<span class="signature">(req, res, message)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~timezoneExists"><span class="type-signature">(inner) </span>timezoneExists<span class="signature">(tz)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
 
 
 
 <div class="description">
-    Generic handler for errors
+    Check if a string corresponds to a known timezone
 </div>
 
 
@@ -331,53 +491,7 @@
 
         <tr>
             
-                <td class="name"><code>req</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express request</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>res</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Express response</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>message</code></td>
+                <td class="name"><code>tz</code></td>
             
 
             <td class="type">
@@ -393,7 +507,7 @@
 
             
 
-            <td class="description last">(optional) additional error message to display</td>
+            <td class="description last">the string</td>
         </tr>
 
     
@@ -434,7 +548,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line28">line 28</a>
+        <a href="lib_timezones.js.html">lib/timezones.js</a>, <a href="lib_timezones.js.html#line63">line 63</a>
     </li></ul></dd>
     
 
@@ -457,137 +571,28 @@
 
 
 
-
-
+<h5>Returns:</h5>
 
         
-            
-
-    
-
-    <h4 class="name" id="~setUp"><span class="type-signature">(inner) </span>setUp<span class="signature">(app)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Set up views using templates and Express Handlebars
+<div class="param-desc">
+    whether it's a valid timezone
 </div>
 
 
 
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
         
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>app</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
+<span class="param-type">Boolean</span>
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the <a href="http://expressjs.com/">Express</a> application</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line60">line 60</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
+    </dd>
 </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 

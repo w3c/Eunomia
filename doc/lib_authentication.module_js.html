@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: lib/routing.js</title>
+    <title>JSDoc: Module: lib/authentication.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: lib/routing.js</h1>
+    <h1 class="page-title">Module: lib/authentication.js</h1>
 
     
 
@@ -34,7 +34,7 @@
     <div class="container-overview">
     
         
-            <div class="description">Set up Express, Handlebars and routes/views</div>
+            <div class="description">Handle (pseudo-)authentication</div>
         
 
         
@@ -76,7 +76,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line1">line 1</a>
+        <a href="lib_authentication.js.html">lib/authentication.js</a>, <a href="lib_authentication.js.html#line1">line 1</a>
     </li></ul></dd>
     
 
@@ -112,190 +112,14 @@
 
     
 
-    <h4 class="name" id="~buildContext"><span class="type-signature">(inner) </span>buildContext<span class="signature">(req, props)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    <h4 class="name" id="~getUser"><span class="type-signature">(inner) </span>getUser<span class="signature">(req)</span><span class="type-signature"> &rarr; {Object}</span></h4>
 
     
 
 
 
 <div class="description">
-    Context baseline for Handlebars rendering
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>req</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">(optional) Express request</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>props</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">(optional) data (keys/properties) to add to the context</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line40">line 40</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    a context to use in rendering
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Object</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="~four_oh_four"><span class="type-signature">(inner) </span>four_oh_four<span class="signature">(req, res, message)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Generic handler for errors
+    Get the user that is currently authenticated (if any)
 </div>
 
 
@@ -351,10 +175,140 @@
         </tr>
 
     
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_authentication.js.html">lib/authentication.js</a>, <a href="lib_authentication.js.html#line65">line 65</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    user properties (dictionary) of the user, if any; <code>undefined</code> otherwise
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~isKnownUser"><span class="type-signature">(inner) </span>isKnownUser<span class="signature">(req)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Check if the user is authenticated
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
 
         <tr>
             
-                <td class="name"><code>res</code></td>
+                <td class="name"><code>req</code></td>
             
 
             <td class="type">
@@ -370,30 +324,7 @@
 
             
 
-            <td class="description last">Express response</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>message</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">(optional) additional error message to display</td>
+            <td class="description last">Express request</td>
         </tr>
 
     
@@ -434,7 +365,160 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line28">line 28</a>
+        <a href="lib_authentication.js.html">lib/authentication.js</a>, <a href="lib_authentication.js.html#line42">line 42</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    whether the user is authenticated
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~logOut"><span class="type-signature">(inner) </span>logOut<span class="signature">(req)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    De-authenticate a user (log them out)
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_authentication.js.html">lib/authentication.js</a>, <a href="lib_authentication.js.html#line75">line 75</a>
     </li></ul></dd>
     
 
@@ -472,7 +556,7 @@
 
 
 <div class="description">
-    Set up views using templates and Express Handlebars
+    Set up authentication
 </div>
 
 
@@ -565,7 +649,161 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routing.js.html">lib/routing.js</a>, <a href="lib_routing.js.html#line60">line 60</a>
+        <a href="lib_authentication.js.html">lib/authentication.js</a>, <a href="lib_authentication.js.html#line21">line 21</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~setUser"><span class="type-signature">(inner) </span>setUser<span class="signature">(req, user)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Authenticate a user
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">user properties (a dictionary)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_authentication.js.html">lib/authentication.js</a>, <a href="lib_authentication.js.html#line52">line 52</a>
     </li></ul></dd>
     
 

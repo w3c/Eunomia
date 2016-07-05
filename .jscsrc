@@ -12,5 +12,8 @@
     "requireCapitalizedConstructorsNew": true,
     "requireCurlyBraces": false,
     "validateLineBreaks": "LF",
-    "validateQuoteMarks": false
+    "validateQuoteMarks": false,
+    "jsDoc": {
+        "enforceExistence": true
+    }
 }

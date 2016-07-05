@@ -20,17 +20,29 @@ them according to their own timezone.
 
 ## 2. Screenshots
 
-![Front page (not logged in)](https://w3c.github.io/Eunomia/screenshots/front-page-not-logged-in.png)
+Front page (not logged in):
+<img src="https://w3c.github.io/Eunomia/screenshots/front-page-not-logged-in.png" alt="Front page (not logged in)" width="128" />
+
 ![Sign up](https://w3c.github.io/Eunomia/screenshots/sign-up.png)
+
 ![Log in](https://w3c.github.io/Eunomia/screenshots/log-in.png)
+
 ![Front page (logged in)](https://w3c.github.io/Eunomia/screenshots/front-page-logged-in.png)
+
 ![All people](https://w3c.github.io/Eunomia/screenshots/people.png)
+
 ![One person](https://w3c.github.io/Eunomia/screenshots/person.png)
+
 ![All meetings](https://w3c.github.io/Eunomia/screenshots/meetings.png)
+
 ![One meeting](https://w3c.github.io/Eunomia/screenshots/meeting.png)
+
 ![All locations](https://w3c.github.io/Eunomia/screenshots/locations.png)
+
 ![One location](https://w3c.github.io/Eunomia/screenshots/location.png)
+
 ![All timezones](https://w3c.github.io/Eunomia/screenshots/timezones.png)
+
 ![One timezone](https://w3c.github.io/Eunomia/screenshots/timezone.png)
 
 ## 2. Getting started

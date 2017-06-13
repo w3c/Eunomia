@@ -1,6 +1,6 @@
 {
   "name": "eunomia",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tool to manage recurrent WebEx meetings at the W3C",
   "license": "MIT",
   "homepage": "https://github.com/w3c/Eunomia",
@@ -35,8 +35,8 @@
     "url": "https://github.com/w3c/Eunomia/issues"
   },
   "engines": {
-    "node": "6",
-    "npm": "3"
+    "node": "6 || 8",
+    "npm": ">=3"
   },
   "scripts": {
     "test": "nsp check && jshint server.js lib/ static/ test/ views/ && jscs server.js lib/ static/ test/ views/ && mocha",
@@ -44,20 +44,20 @@
     "start": "node --use_strict --throw-deprecation --trace-deprecation server"
   },
   "dependencies": {
-    "body-parser": "1.15.2",
-    "express-handlebars": "3.0.0",
-    "express": "4.14.0",
-    "moment-timezone": "0.5.4",
-    "sqlite3": "3.1.4",
+    "body-parser": "1.17.2",
     "cookie-session": "1.2.0",
-    "winston": "2.2.0"
+    "express-handlebars": "3.0.0",
+    "express": "4.15.3",
+    "moment-timezone": "0.5.13",
+    "sqlite3": "3.1.8",
+    "winston": "2.3.1"
   },
   "devDependencies": {
-    "jscs": "3.0.5",
-    "jsdoc": "3.4.0",
-    "jshint": "2.9.2",
-    "mocha": "2.5.3",
-    "nsp": "2.5.0",
-    "updtr": "0.2.1"
+    "jscs": "3.0.7",
+    "jsdoc": "3.4.3",
+    "jshint": "2.9.4",
+    "mocha": "3.4.2",
+    "nsp": "2.6.3",
+    "updtr": "1.0.0"
   }
 }

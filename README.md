@@ -13,7 +13,7 @@ A tool to manage recurrent WebEx meetings
 
 ## 1. Introduction
 
-This is a [Geek Week](https://www.w3.org/blog/2015/10/geek-week-at-w3c/) 2016 project at the [World Wide Web Consortium (W3C)](https://www.w3.org/).
+This is a [Geek Week](https://www.w3.org/blog/2015/10/geek-week-at-w3c/) 2016/2017 project at the [World Wide Web Consortium (W3C)](https://www.w3.org/).
 
 The goal is to manage all recurrent [WebEx](https://www.webex.com/) teleconferences with their details, times and associates timezones; and to let users view
 them according to their own timezone.
@@ -80,7 +80,7 @@ One timezone:
 <img src="https://w3c.github.io/Eunomia/screenshots/timezone.png"
 alt="One timezone" width="256" />
 
-## 2. Getting started
+## 3. Getting started
 
 ```bash
 $ git clone https://github.com/w3c/Eunomia.git
@@ -91,13 +91,13 @@ $ npm install
 $ npm start
 ```
 
-## 3. Testing
+## 4. Testing
 
 ```bash
 $ npm test
 ```
 
-## 4. Documentation
+## 5. Documentation
 
 Documentation for all JS files is generated using [JSDoc](http://usejsdoc.org/):
 
@@ -107,8 +107,8 @@ $ npm run jsdoc
 
 See the documentation [on GitHub pages](https://w3c.github.io/Eunomia/doc/).
 
-## 5. Credits
+## 6. Credits
 
-Copyright &copy; 2016 [World Wide Web Consortium (W3C)](https://www.w3.org/).
+Copyright &copy; 2016&ndash;2017 [World Wide Web Consortium (W3C)](https://www.w3.org/).
 
 This project is licenced [under the terms of the MIT licence](LICENSE.md).

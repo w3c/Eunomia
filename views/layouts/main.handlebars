@@ -15,7 +15,7 @@
         <meta name="keywords" content="Eunomia, WebEx, W3C, w3.org, World, Wide, Web, Consortium, meeting, calendar, conference, teleconference, timezone" />
         <meta name="author" content="World Wide Web Consortium (W3C)" />
         <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.w3.org/2015/labs/favicon.ico" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap{{#unless debug}}.min{{/unless}}.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap{{#unless debug}}.min{{/unless}}.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700,700i,900&subset=latin-ext" />
         <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jaldi:400,700&subset=latin-ext" /> -->
         <link rel="stylesheet" href="/css/style.css" />
@@ -60,7 +60,7 @@
                     <a href="mailto:antonio@w3.org?subject=Eunomia">contact the author</a>
                 </p>
                 <p class="col-xs-12 col-sm-5">
-                    Copyright &copy; 2016 <a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a>,
+                    Copyright &copy; 2016&ndash;2017 <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a>,
                     <a href="https://github.com/w3c/Eunomia/blob/master/LICENSE.md">MIT-licenced</a>
                 </p>
             </div>
@@ -72,13 +72,15 @@
         </script>
 
         {{#if debug}}
-        <!-- <script data-main="/js/behaviour" src="http://requirejs.org/docs/release/2.2.0/comments/require.js"></script> -->
-        <!-- Switching to cdnjs.com temporarily as there's a problem with the SSL certificate of https://requirejs.org/ -->
-        <script data-main="/js/behaviour" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js"></script>
+        <!-- <script data-main="/js/behaviour" src="https://requirejs.org/docs/release/2.3.3/comments/require.js"></script> -->
+        <!-- Switching to cdnjs.com temporarily as there's a problem with the SSL certificate of https://requirejs.org/
+             @TODO: switch back -->
+        <script data-main="/js/behaviour" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.js"></script>
         {{else}}
-        <!-- <script data-main="/js/behaviour" src="http://requirejs.org/docs/release/2.2.0/minified/require.js"></script> -->
-        <!-- Switching to cdnjs.com temporarily as there's a problem with the SSL certificate of https://requirejs.org/ -->
-        <script data-main="/js/behaviour" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
+        <!-- <script data-main="/js/behaviour" src="https://requirejs.org/docs/release/2.3.3/minified/require.js"></script> -->
+        <!-- Switching to cdnjs.com temporarily as there's a problem with the SSL certificate of https://requirejs.org/
+             @TODO: switch back -->
+        <script data-main="/js/behaviour" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
         {{/if}}
 
     </body>

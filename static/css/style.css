@@ -65,8 +65,12 @@ footer {
     border-width: .5em 0 0 0;
 }
 
-footer p {
+footer p,
+footer p * {
+    margin: 0;
+    line-height: 2em;
     color: #ffffff;
+    font-size: .9em;
 }
 
 footer a {
@@ -78,16 +82,6 @@ footer a:hover,
 footer a:active,
 footer a:focus {
     color: #ffff00;
-}
-
-footer p {
-    margin: 0;
-    line-height: 2em;
-}
-
-footer p,
-footer p * {
-    font-size: .9em;
 }
 
 main {

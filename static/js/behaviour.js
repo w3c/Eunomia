@@ -62,9 +62,9 @@ requirejs.config({
     paths: {
         // "Bootstrap's JavaScript requires jQuery version 1.9.1 or higher, but lower than version 3".
         jquery: 'https://code.jquery.com/jquery-2.2.4' + (EUNOMIA_DEBUG ? '' : '.min'),
-        bootstrap: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap' + (EUNOMIA_DEBUG ? '' : '.min'),
-        'markdown-it': 'https://cdnjs.cloudflare.com/ajax/libs/markdown-it/7.0.0/markdown-it' + (EUNOMIA_DEBUG ? '' : '.min'),
-        'tablesorter': 'https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.5/js/jquery.tablesorter' + (EUNOMIA_DEBUG ? '' : '.min')
+        bootstrap: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap' + (EUNOMIA_DEBUG ? '' : '.min'),
+        'markdown-it': 'https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.3.1/markdown-it' + (EUNOMIA_DEBUG ? '' : '.min'),
+        'tablesorter': 'https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.14/js/jquery.tablesorter' + (EUNOMIA_DEBUG ? '' : '.min')
     },
     shim: {
         'bootstrap': ['jquery'],

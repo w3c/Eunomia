@@ -1,6 +1,6 @@
 {
   "name": "eunomia",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A tool to manage recurrent WebEx meetings at the W3C",
   "license": "MIT",
   "homepage": "https://github.com/w3c/Eunomia",

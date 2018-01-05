@@ -13,7 +13,7 @@ A tool to manage recurrent WebEx meetings
 
 ## 1. Introduction
 
-This is a [Geek Week](https://www.w3.org/blog/2015/10/geek-week-at-w3c/) 2016/2017 project at the [World Wide Web Consortium (W3C)](https://www.w3.org/).
+This is a [Geek Week](https://www.w3.org/blog/2015/10/geek-week-at-w3c/) 2016 project at the [World Wide Web Consortium (W3C)](https://www.w3.org/).
 
 The goal is to manage all recurrent [WebEx](https://www.webex.com/) teleconferences with their details, times and associates timezones; and to let users view
 them according to their own timezone.
@@ -109,6 +109,6 @@ See the documentation [on GitHub pages](https://w3c.github.io/Eunomia/doc/).
 
 ## 6. Credits
 
-Copyright &copy; 2016&ndash;2017 [World Wide Web Consortium (W3C)](https://www.w3.org/).
+Copyright &copy; 2016&ndash;2018 [World Wide Web Consortium (W3C)](https://www.w3.org/).
 
 This project is licenced [under the terms of the MIT licence](LICENSE.md).

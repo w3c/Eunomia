@@ -20,7 +20,7 @@ const processLoginPage = function($) {
             window.location.href = data;
         });
         gate.fail(function(err) {
-            console.dir(err);
+            console.dir(err); // eslint-disable-line no-console
         });
     });
 };
@@ -34,7 +34,7 @@ const processLoginPage = function($) {
 const processMD = function($, md) {
     $('.md').each(function() {
         const content = this.textContent;
-        console.log(content);
+        console.log(content); // eslint-disable-line no-console
         $(this).html(md.render(content));
         $(this).removeClass('missing');
     });

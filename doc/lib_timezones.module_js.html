@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: lib/timezones.js</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lib/timezones.js - Documentation</title>
 
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
-
 <body>
 
-<div id="main">
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
-    <h1 class="page-title">Module: lib/timezones.js</h1>
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_authentication.module_js.html">lib/authentication.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~getUser">getUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~isKnownUser">isKnownUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~logOut">logOut</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~setUp">setUp</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~setUser">setUser</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_logging.module_js.html">lib/logging.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_logging.module_js.html#~dir">dir</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_logging.module_js.html#~setUp">setUp</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_persistence.module_js.html">lib/persistence.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~findEntity">findEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~listEntities">listEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~retrieveRows">retrieveRows</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~setUp">setUp</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~wrapUp">wrapUp</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_routing.module_js.html">lib/routing.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_routing.module_js.html#~buildContext">buildContext</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_routing.module_js.html#~four_oh_four">four_oh_four</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_routing.module_js.html#~setUp">setUp</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_timezones.module_js.html">lib/timezones.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_timezones.module_js.html#~processTimezone">processTimezone</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_timezones.module_js.html#~setUp">setUp</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_timezones.module_js.html#~shiftTime">shiftTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_timezones.module_js.html#~timezoneExists">timezoneExists</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_util.module_js.html">lib/util.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_util.module_js.html#~formatDuration">formatDuration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_util.module_js.html#~isValidID">isValidID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_util.module_js.html#~normaliseID">normaliseID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_util.module_js.html#~processData">processData</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="server.module_js.html">server.js</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="static_js_behaviour.module_js.html">static/js/behaviour.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="static_js_behaviour.module_js.html#~init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="static_js_behaviour.module_js.html#~processLoginPage">processLoginPage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="static_js_behaviour.module_js.html#~processMD">processMD</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">lib/timezones.js</h1>
+    
 
     
 
@@ -98,9 +111,7 @@
 
     
 
-    
-
-    
+     
 
     
 
@@ -111,22 +122,13 @@
 
         
             
+<div class="section-method">
 
     
 
-    
     <h4 class="name" id="~processTimezone"><span class="type-signature">(inner) </span>processTimezone<span class="signature">()</span><span class="type-signature"></span></h4>
-    
 
     
-
-
-
-
-
-
-
-
 
 
 
@@ -191,14 +193,19 @@
 
 
 
+
+
+
+
+
+</div>
         
             
+<div class="section-method">
 
     
 
-    
     <h4 class="name" id="~setUp"><span class="type-signature">(inner) </span>setUp<span class="signature">()</span><span class="type-signature"></span></h4>
-    
 
     
 
@@ -207,14 +214,6 @@
 <div class="description">
     Set up timezones
 </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -277,14 +276,19 @@
 
 
 
+
+
+
+
+
+</div>
         
             
+<div class="section-method">
 
     
 
-    
     <h4 class="name" id="~shiftTime"><span class="type-signature">(inner) </span>shiftTime<span class="signature">(to, time)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
 
     
 
@@ -293,86 +297,6 @@
 <div class="description">
     Return the equivalent date-time in a different timezone
 </div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>to</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the target timezone</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>time</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">(optional) the date-time (<code>now()</code> if not present)</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
 
 
 
@@ -426,62 +350,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    the equivalent date-time
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Object</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~timezoneExists"><span class="type-signature">(inner) </span>timezoneExists<span class="signature">(tz)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Check if a string corresponds to a known timezone
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -507,13 +375,13 @@
 
         <tr>
             
-                <td class="name"><code>tz</code></td>
+                <td class="name"><code>to</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type"><code>String</code></span>
 
 
             
@@ -523,13 +391,98 @@
 
             
 
-            <td class="description last">the string</td>
+            <td class="description last">
+                the target timezone
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>time</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Object</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                (optional) the date-time (<code>now()</code> if not present)
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Object</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    the equivalent date-time
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="~timezoneExists"><span class="type-signature">(inner) </span>timezoneExists<span class="signature">(tz)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Check if a string corresponds to a known timezone
+</div>
 
 
 
@@ -583,37 +536,98 @@
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tz</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>String</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                the string
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
 <h5>Returns:</h5>
 
         
-<div class="param-desc">
-    whether it's a valid timezone
-</div>
 
-
-
-<dl>
+<dl class="param-type">
     <dt>
-        Type
+        Type:
     </dt>
     <dd>
         
-<span class="param-type">Boolean</span>
+<span class="param-type"><code>Boolean</code></span>
 
 
     </dd>
 </dl>
 
+
+<div class="param-desc">
+    whether it's a valid timezone
+</div>
+
     
+</div>
 
 
 
-
-
+</div>
         
     
 
@@ -629,17 +643,13 @@
 
 </div>
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="lib_authentication.module_js.html">lib/authentication.js</a></li><li><a href="lib_logging.module_js.html">lib/logging.js</a></li><li><a href="lib_persistence.module_js.html">lib/persistence.js</a></li><li><a href="lib_routing.module_js.html">lib/routing.js</a></li><li><a href="lib_timezones.module_js.html">lib/timezones.js</a></li><li><a href="lib_util.module_js.html">lib/util.js</a></li><li><a href="server.module_js.html">server.js</a></li><li><a href="static_js_behaviour.module_js.html">static/js/behaviour.js</a></li></ul>
-</nav>
-
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Jan 05 2018 10:45:55 GMT+0100 (CET)
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Jul 19 2018 08:14:43 GMT+0200 (Central European Summer Time) using the Minami theme.
 </footer>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
 </body>
 </html>

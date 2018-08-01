@@ -1,7 +1,7 @@
 {
   "name": "eunomia",
-  "version": "0.1.0",
-  "description": "A tool to manage recurrent WebEx meetings at the W3C",
+  "version": "0.2.0",
+  "description": "A tool to manage recurrent meetings at the W3C",
   "license": "MIT",
   "homepage": "https://github.com/w3c/Eunomia",
   "keywords": [
@@ -35,29 +35,35 @@
     "url": "https://github.com/w3c/Eunomia/issues"
   },
   "engines": {
-    "node": "6 || 8",
-    "npm": ">=3"
+    "node": "8 || 10",
+    "npm": ">=6"
   },
   "scripts": {
-    "test": "nsp check && jshint server.js lib/ static/ test/ views/ && jscs server.js lib/ static/ test/ views/ && mocha",
-    "jsdoc": "jsdoc -a all --verbose -d doc/ -e utf8 -r server.js lib/ static/ test/ views/",
+    "audit": "npm audit",
+    "check": "npm-check --ignore minami --ignore eslint-plugin-node --ignore eslint-config-plugin:node",
+    "lint": "eslint server.js lib/ test/ static/js/",
+    "hint": "jshint server.js lib/ test/ static/js/",
+    "test": "mocha",
+    "jsdoc": "jsdoc --configure jsdoc.json -r server.js lib/ static/ test/ views/",
+    "build": "npm run check && npm run lint && npm run hint && npm run test && npm run jsdoc",
     "start": "node --use_strict --throw-deprecation --trace-deprecation server"
   },
   "dependencies": {
-    "body-parser": "1.18.2",
+    "body-parser": "1.18.3",
     "cookie-session": "1.3.2",
-    "express": "4.16.2",
     "express-handlebars": "3.0.0",
-    "moment-timezone": "0.5.14",
-    "sqlite3": "3.1.13",
-    "winston": "2.4.0"
+    "express": "4.16.3",
+    "moment-timezone": "0.5.21",
+    "sqlite3": "4.0.2",
+    "winston": "3.0.0"
   },
   "devDependencies": {
-    "jscs": "3.0.7",
+    "eslint-plugin-node": "6.0.1",
+    "eslint": "5.1.0",
     "jsdoc": "3.5.5",
     "jshint": "2.9.5",
-    "mocha": "4.1.0",
-    "nsp": "3.1.0",
-    "updtr": "2.0.0"
+    "minami": "1.2.3",
+    "mocha": "5.2.0",
+    "npm-check": "5.7.1"
   }
 }

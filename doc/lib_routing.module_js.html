@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: lib/routing.js</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lib/routing.js - Documentation</title>
 
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
-
 <body>
 
-<div id="main">
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
-    <h1 class="page-title">Module: lib/routing.js</h1>
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_authentication.module_js.html">lib/authentication.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~getUser">getUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~isKnownUser">isKnownUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~logOut">logOut</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~setUp">setUp</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_authentication.module_js.html#~setUser">setUser</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_logging.module_js.html">lib/logging.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_logging.module_js.html#~dir">dir</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_logging.module_js.html#~setUp">setUp</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_persistence.module_js.html">lib/persistence.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~findEntity">findEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~listEntities">listEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~retrieveRows">retrieveRows</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~setUp">setUp</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_persistence.module_js.html#~wrapUp">wrapUp</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_routing.module_js.html">lib/routing.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_routing.module_js.html#~buildContext">buildContext</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_routing.module_js.html#~four_oh_four">four_oh_four</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_routing.module_js.html#~setUp">setUp</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_timezones.module_js.html">lib/timezones.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_timezones.module_js.html#~processTimezone">processTimezone</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_timezones.module_js.html#~setUp">setUp</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_timezones.module_js.html#~shiftTime">shiftTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_timezones.module_js.html#~timezoneExists">timezoneExists</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="lib_util.module_js.html">lib/util.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_util.module_js.html#~formatDuration">formatDuration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_util.module_js.html#~isValidID">isValidID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_util.module_js.html#~normaliseID">normaliseID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="lib_util.module_js.html#~processData">processData</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="server.module_js.html">server.js</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="static_js_behaviour.module_js.html">static/js/behaviour.js</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="static_js_behaviour.module_js.html#~init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="static_js_behaviour.module_js.html#~processLoginPage">processLoginPage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="static_js_behaviour.module_js.html#~processMD">processMD</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">lib/routing.js</h1>
+    
 
     
 
@@ -98,9 +111,7 @@
 
     
 
-    
-
-    
+     
 
     
 
@@ -111,12 +122,11 @@
 
         
             
+<div class="section-method">
 
     
 
-    
     <h4 class="name" id="~buildContext"><span class="type-signature">(inner) </span>buildContext<span class="signature">(req, props)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
 
     
 
@@ -125,86 +135,6 @@
 <div class="description">
     Context baseline for Handlebars rendering
 </div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>req</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">(optional) Express request</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>props</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">(optional) data (keys/properties) to add to the context</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
 
 
 
@@ -258,62 +188,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    a context to use in rendering
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Object</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~four_oh_four"><span class="type-signature">(inner) </span>four_oh_four<span class="signature">(req, res, message)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Generic handler for errors
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -345,7 +219,7 @@
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type"><code>Object</code></span>
 
 
             
@@ -355,20 +229,23 @@
 
             
 
-            <td class="description last">Express request</td>
+            <td class="description last">
+                (optional) Express request
+                
+            </td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>res</code></td>
+                <td class="name"><code>props</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type"><code>Object</code></span>
 
 
             
@@ -378,36 +255,72 @@
 
             
 
-            <td class="description last">Express response</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>message</code></td>
-            
-
-            <td class="type">
-            
+            <td class="description last">
+                (optional) data (keys/properties) to add to the context
                 
-<span class="param-type">String</span>
-
-
-            
             </td>
-
-            
-
-            
-
-            <td class="description last">(optional) additional error message to display</td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Object</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    a context to use in rendering
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="~four_oh_four"><span class="type-signature">(inner) </span>four_oh_four<span class="signature">(req, res, message)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Generic handler for errors
+</div>
 
 
 
@@ -461,40 +374,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~setUp"><span class="type-signature">(inner) </span>setUp<span class="signature">(app)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Set up views using templates and Express Handlebars
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -520,13 +399,13 @@
 
         <tr>
             
-                <td class="name"><code>app</code></td>
+                <td class="name"><code>req</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type"><code>Object</code></span>
 
 
             
@@ -536,13 +415,99 @@
 
             
 
-            <td class="description last">the <a href="http://expressjs.com/">Express</a> application</td>
+            <td class="description last">
+                Express request
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Object</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Express response
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>String</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                (optional) additional error message to display
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="~setUp"><span class="type-signature">(inner) </span>setUp<span class="signature">(app)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Set up views using templates and Express Handlebars
+</div>
 
 
 
@@ -596,6 +561,56 @@
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>app</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Object</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                the <a href="http://expressjs.com/">Express</a> application
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -605,6 +620,14 @@
 
 
 
+
+
+
+
+
+
+
+</div>
         
     
 
@@ -620,17 +643,13 @@
 
 </div>
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="lib_authentication.module_js.html">lib/authentication.js</a></li><li><a href="lib_logging.module_js.html">lib/logging.js</a></li><li><a href="lib_persistence.module_js.html">lib/persistence.js</a></li><li><a href="lib_routing.module_js.html">lib/routing.js</a></li><li><a href="lib_timezones.module_js.html">lib/timezones.js</a></li><li><a href="lib_util.module_js.html">lib/util.js</a></li><li><a href="server.module_js.html">server.js</a></li><li><a href="static_js_behaviour.module_js.html">static/js/behaviour.js</a></li></ul>
-</nav>
-
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Jan 05 2018 10:45:55 GMT+0100 (CET)
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Jul 19 2018 08:14:43 GMT+0200 (Central European Summer Time) using the Minami theme.
 </footer>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
 </body>
 </html>

@@ -2,6 +2,8 @@
 
 # Eunomia
 
+:warning: This project is discontinued, and not being actively maintained.
+
 A tool to manage recurrent WebEx meetings
 
 1. [Introduction](#1-introduction)

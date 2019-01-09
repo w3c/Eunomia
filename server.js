@@ -1,6 +1,6 @@
 /**
  * @file Eunomia's main file and entry point
- * @author Antonio Olmo Titos <antonio@w3.org>
+ * @author Antonio Olmo Titos <a@olmo-titos.info>
  * @exports server
  */
 

@@ -16,7 +16,7 @@ INSERT INTO locations VALUES
 ;
 
 INSERT INTO people VALUES
-    ('Antonio', 'antonio@w3.org', 'Keio', 'Madrid', 1, 60, 1),
+    ('Someone', 'someone@w3.org', 'Keio', 'Madrid', 1, 60, 1),
     ('Guillaume', 'guillaume@w3.org', 'MIT', NULL, 0, 0, 0),
     ('Coralie', 'coralie@w3.org', 'ERCIM', NULL, 0, 0, 1),
     ('Kaz', 'ashimura@w3.org', 'Keio', NULL, 0, 0, 1),
@@ -24,7 +24,7 @@ INSERT INTO people VALUES
 ;
 
 INSERT INTO meetings VALUES
-    ('Design', 'Antonio', '[Wiki page](https://www.w3.org/Team/wiki/%E2%80%9CDashboards%E2%80%9D_project)', NULL, 'UTC', 3, '15:00', 60),
+    ('Design', 'Someone', '[Wiki page](https://www.w3.org/Team/wiki/%E2%80%9CDashboards%E2%80%9D_project)', NULL, 'UTC', 3, '15:00', 60),
     ('KAP', 'Kaz', '[Agenda](https://www.w3.org/Team/Keio/agenda)', 'Keio', NULL, 3, '15:30', 90),
     ('Sysweb', 'Ted', '', 'MIT', NULL, 2, '10:00', 60)
 ;
@@ -32,5 +32,5 @@ INSERT INTO meetings VALUES
 INSERT INTO attendance VALUES
     ('Design', 'Guillaume'),
     ('Design', 'Coralie'),
-    ('KAP', 'Antonio')
+    ('KAP', 'Someone')
 ;

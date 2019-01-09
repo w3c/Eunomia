@@ -1,6 +1,6 @@
 /**
  * @file Eunomia's client-side logic
- * @author Antonio Olmo Titos <antonio@w3.org>
+ * @author Antonio Olmo Titos <a@olmo-titos.info>
  * @exports static/js/behaviour
  */
 

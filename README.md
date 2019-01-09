@@ -111,6 +111,6 @@ See the documentation [on GitHub pages](https://w3c.github.io/Eunomia/doc/).
 
 ## 6. Credits
 
-Copyright &copy; 2016&ndash;2018 [World Wide Web Consortium (W3C)](https://www.w3.org/).
+Copyright &copy; 2016&ndash;2019 [World Wide Web Consortium (W3C)](https://www.w3.org/).
 
 This project is licenced [under the terms of the MIT licence](LICENSE.md).
